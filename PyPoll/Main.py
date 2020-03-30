@@ -1,17 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[26]:
-
-
 #Importing modules and file
 
 import os
 import csv
 file = os.path.join(os.getcwd(),'Resources','election_data.csv')
-
-
-# In[53]:
 
 
 #Defining variables
@@ -24,10 +18,6 @@ khan = []
 correy = []
 li = []
 otooley = []
-
-
-# In[48]:
-
 
 #Loading csv file
 
@@ -85,9 +75,6 @@ with open(file, newline='') as csvfile:
         winner = "O'Tooley"
 
 
-# In[ ]:
-
-
 # Printing the results to the screen 
 
 print(f'Election Results')
@@ -101,14 +88,6 @@ print(f'-----------------------------------')
 print(f'Winner: {winner}')
 print(f'-----------------------------------')
 
-
-# In[56]:
-
-
-
-
-
-# In[ ]:
 
 
 
