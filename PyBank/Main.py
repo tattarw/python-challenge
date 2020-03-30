@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 #Importing modules and file
 import os
 import csv
@@ -49,4 +46,13 @@ print(f'Total: $ {totalpl}')
 print(f'Greatest Increase in Profits: {daxdifd} : ($ {maxdif})')
 print(f'Greatest Decrease in Profits: {mindifd} : ($ {mindif})')
 
+# Exporting results to txt file
 
+with open("Analysis.txt", "w") as text_file:
+
+     print(f'Financial Analysis', file=text_file)
+     print(f'----------------------------', file=text_file)
+     print(f'Total Months : {months}', file=text_file)
+     print(f'Total: $ {totalpl}', file=text_file)
+     print(f'Greatest Increase in Profits: {daxdifd} : ($ {maxdif})', file=text_file)
+     print(f'Greatest Decrease in Profits: {mindifd} : ($ {mindif})', file=text_file)
