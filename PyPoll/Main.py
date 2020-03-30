@@ -85,7 +85,18 @@ print(f'-----------------------------------')
 print(f'Winner: {winner}')
 print(f'-----------------------------------')
 
+# Exporting results to txt file
 
+with open("Winner.txt", "w") as text_file:
 
-
+    print(f'Election Results', file=text_file)
+    print(f'----------------------------', file=text_file)
+    print(f'Total votes: {total}', file=text_file)
+    print(f'Khan: {khan_percent}% ({k_votes})', file=text_file)
+    print(f'Correy: {correy_percent}% ({c_votes})', file=text_file)
+    print(f'Li: {li_percent}% ({l_votes})', file=text_file)
+    print(f'OTooley: {otooley_percent}% ({o_votes})', file=text_file)
+    print(f'-----------------------------------', file=text_file)
+    print(f'Winner: {winner}', file=text_file)
+    print(f'-----------------------------------', file=text_file)
 
