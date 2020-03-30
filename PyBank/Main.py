@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[14]:
-
-
 #Importing modules and file
 import os
 import csv
 file = os.path.join( os.getcwd(),'Resources','budget_data.csv')
-
-
-# In[15]:
-
 
 #Defining variables
 
@@ -21,9 +14,6 @@ initialv = 0;
 dif = 0; 
 maxdif = 0;
 mindif = 0; 
-
-
-# In[34]:
 
 
 #Loading csv file
@@ -50,10 +40,6 @@ with open(file, newline='') as csvfile:
         months = months + 1
         totalpl = totalpl + value
 
-
-# In[35]:
-
-
 # Print results
 
 print(f'Financial Analysis')
@@ -62,10 +48,5 @@ print(f'Total Months : {months}')
 print(f'Total: $ {totalpl}')
 print(f'Greatest Increase in Profits: {daxdifd} : ($ {maxdif})')
 print(f'Greatest Decrease in Profits: {mindifd} : ($ {mindif})')
-
-
-# In[ ]:
-
-
 
 
